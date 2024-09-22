@@ -22,14 +22,6 @@ The chat interface is command-line-based, and the chatbot will continue interact
 
 # Core Workflow
 
-* Prompt Template: The chatbot prepares the input with the following format:
-  Answer the question below.
-
-Here is the conversation history: {context}
-
-Question: {question}
-Answer:
-
 * LLM Interaction: The `OllamaLLM` is invoked with the current user input and conversation history. The model generates an answer based on both the immediate question and the preceding context.
 
 * Conversation Flow: The chatbot continuously updates the context with each interaction, making the conversation dynamic and consistent.
